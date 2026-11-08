@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="nexo-icone.png" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <aside>
+      <h1>
+        <img src="nexo-icone.png" alt="" />
+        Nexo
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="#" class="ativo">Minhas tarefas</a></li>
+          <li><a href="#">Categorias</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section>
+        <h2>Minhas tarefas</h2>
+        <p>Organize aqui suas atividades e afazeres.</p>
+
+        <div class="controles-tarefas">
+          <input
+            type="search"
+            id="pesquisa-tarefas"
+            placeholder="Pesquisar tarefas..."
+            aria-label="Pesquisar tarefas"
+          />
+
+          <nav class="filtros-categorias" id="botoes-filtros">
+            <button type="button" class="ativo">Todas</button>
+            <button type="button">Programação</button>
+            <button type="button">Trabalho</button>
+            <button type="button">Estudos</button>
+            <button type="button">Pessoal</button>
+          </nav>
+        </div>
+
+        <button type="button" id="abrir-formulario">+ Nova tarefa</button>
+
+        <form id="formulario-tarefa" hidden>
+          <h3 id="titulo-formulario">Adicionar tarefa</h3>
+
+          <label for="titulo-tarefa">Nome da tarefa</label>
+          <input
+            type="text"
+            id="titulo-tarefa"
+            placeholder="Ex: Estudar JavaScript"
+            maxlength="120"
+            required
+          />
+
+          <label for="categoria-tarefa">Categoria</label>
+          <select id="categoria-tarefa">
+            <option value="">Sem categoria</option>
+            <option value="Programação">Programação</option>
+            <option value="Trabalho">Trabalho</option>
+            <option value="Estudos">Estudos</option>
+            <option value="Pessoal">Pessoal</option>
+          </select>
+
+          <label for="prioridade-tarefa">Prioridade</label>
+          <select id="prioridade-tarefa">
+            <option value="baixa">Baixa</option>
+            <option value="media" selected>Média</option>
+            <option value="alta">Alta</option>
+          </select>
+
+          <button type="submit" id="botao-enviar-tarefa">
+            Adicionar tarefa
+          </button>
+          <button type="button" id="cancelar-formulario">Cancelar</button>
+        </form>
+
+        <div class="lista-tarefas">
+          <p id="mensagem-lista" hidden aria-live="polite"></p>
+          <div class="grupo-tarefas" id="tarefas-pendentes">
+            <h3>Pendentes</h3>
+          </div>
+
+          <div class="grupo-tarefas" id="tarefas-concluidas">
+            <h3>Concluídas</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
