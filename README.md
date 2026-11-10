@@ -1,8 +1,8 @@
 # Nexo
 
-\<p align="center">
-&#x20; \<img src="img/nexo-icone.png" alt="Ícone do Nexo" width="120">
-\</p>
+<p align="center">
+  <img src="img/nexo-icone.png" alt="Ícone do Nexo" width="120">
+</p>
 
 O **Nexo** é um site de organização pessoal simples e prático, criado para ajudar a gerenciar as tarefas da rotina e acompanhar as atividades do dia a dia.
 
