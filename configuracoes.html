@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configurações | Nexo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/configuracoes.js"></script>
+    <link rel="icon" type="image/png" href="img/nexo-icone.png" />
+  </head>
+
+  <body>
+    <aside>
+      <h1>
+        <img src="img/nexo-icone.png" alt="" />
+        Nexo
+      </h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Minhas tarefas</a>
+          </li>
+          <li>
+            <a href="categorias.html">Categorias</a>
+          </li>
+          <li>
+            <a href="configuracoes.html" class="ativo">Configurações</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="pagina-configuracoes">
+        <h2>Configurações</h2>
+        <p>Personalize sua experiência no Nexo.</p>
+
+        <div class="secao-configuracoes">
+          <h3>Aparência</h3>
+          <p>Escolha como deseja visualizar o Nexo.</p>
+
+          <div class="opcao-configuracao">
+            <div>
+              <label for="tema">Tema</label>
+              <p>Alterne entre o tema escuro e claro.</p>
+            </div>
+
+            <select id="tema">
+              <option value="escuro">Escuro</option>
+              <option value="claro">Claro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="secao-configuracoes">
+          <h3>Visualização das atividades</h3>
+          <p>Escolha como suas atividades serão organizadas.</p>
+
+          <div class="opcao-configuracao">
+            <div>
+              <label for="agrupamento">Agrupamento</label>
+              <p>Organize suas atividades visualmente.</p>
+            </div>
+
+            <select id="agrupamento">
+              <option value="nenhum">Sem agrupamento</option>
+              <option value="categoria">Por categoria</option>
+              <option value="prioridade">Por prioridade</option>
+            </select>
+          </div>
+
+          <div class="opcao-configuracao">
+            <div>
+              <label for="ordenacao">Ordenação</label>
+              <p>Defina a ordem de exibição das atividades.</p>
+            </div>
+
+            <select id="ordenacao">
+              <option value="criacao">Data de criação</option>
+              <option value="alfabetica">Ordem alfabética</option>
+              <option value="prioridade">Prioridade</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="secao-configuracoes">
+          <h3>Dados</h3>
+          <p>Gerencie as informações armazenadas no seu navegador.</p>
+
+          <div class="opcao-configuracao">
+            <div>
+              <h4>Limpar dados</h4>
+              <p>Apague suas atividades, categorias e preferências.</p>
+            </div>
+
+            <button type="button" id="limpar-dados">Limpar dados</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

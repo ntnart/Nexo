@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categorias | Nexo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/configuracoes.js"></script>
+    <link rel="icon" type="image/png" href="img/nexo-icone.png" />
+  </head>
+
+  <body>
+    <aside>
+      <h1>
+        <img src="img/nexo-icone.png" alt="" />
+        Nexo
+      </h1>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Minhas tarefas</a>
+          </li>
+          <li>
+            <a href="categorias.html" class="ativo">Categorias</a>
+          </li>
+          <li>
+            <a href="configuracoes.html">Configurações</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="pagina-categorias">
+        <h2>Categorias</h2>
+        <p>Organize suas atividades por categorias personalizadas.</p>
+
+        <div class="cabecalho-categorias">
+          <div>
+            <h3>Suas categorias</h3>
+            <p>Gerencie as categorias utilizadas nas suas tarefas.</p>
+          </div>
+
+          <button type="button" id="abrir-formulario-categoria">
+            + Nova categoria
+          </button>
+        </div>
+        <form id="formulario-categoria" hidden>
+          <h3 id="titulo-formulario-categoria">Nova categoria</h3>
+
+          <label for="nome-categoria">Nome da categoria</label>
+          <input
+            type="text"
+            id="nome-categoria"
+            placeholder="Ex: Faculdade"
+            maxlength="40"
+            required
+          />
+
+          <label for="cor-categoria">Cor da categoria</label>
+          <input type="color" id="cor-categoria" value="#818cf8" />
+
+          <div class="botoes-formulario-categoria">
+            <button type="submit" id="salvar-categoria">
+              Salvar categoria
+            </button>
+
+            <button type="button" id="cancelar-categoria">Cancelar</button>
+          </div>
+        </form>
+        <div class="lista-categorias">
+          <article class="card-categoria">
+            <div class="informacoes-categoria">
+              <span class="cor-categoria cor-programacao"></span>
+              <div>
+                <h3>Programação</h3>
+                <p>0 tarefas</p>
+              </div>
+            </div>
+
+            <div class="acoes-categoria">
+              <button
+                type="button"
+                class="botao-acao botao-editar"
+                aria-label="Editar categoria Programação"
+                title="Editar"
+              >
+                <span aria-hidden="true">✎</span>
+              </button>
+              <button
+                type="button"
+                class="botao-acao botao-excluir"
+                aria-label="Excluir categoria Programação"
+                title="Excluir"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="card-categoria">
+            <div class="informacoes-categoria">
+              <span class="cor-categoria cor-trabalho"></span>
+              <div>
+                <h3>Trabalho</h3>
+                <p>0 tarefas</p>
+              </div>
+            </div>
+
+            <div class="acoes-categoria">
+              <button
+                type="button"
+                class="botao-acao botao-editar"
+                aria-label="Editar categoria Trabalho"
+                title="Editar"
+              >
+                <span aria-hidden="true">✎</span>
+              </button>
+              <button
+                type="button"
+                class="botao-acao botao-excluir"
+                aria-label="Excluir categoria Trabalho"
+                title="Excluir"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="card-categoria">
+            <div class="informacoes-categoria">
+              <span class="cor-categoria cor-estudos"></span>
+              <div>
+                <h3>Estudos</h3>
+                <p>0 tarefas</p>
+              </div>
+            </div>
+
+            <div class="acoes-categoria">
+              <button
+                type="button"
+                class="botao-acao botao-editar"
+                aria-label="Editar categoria Estudos"
+                title="Editar"
+              >
+                <span aria-hidden="true">✎</span>
+              </button>
+              <button
+                type="button"
+                class="botao-acao botao-excluir"
+                aria-label="Excluir categoria Estudos"
+                title="Excluir"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+          </article>
+
+          <article class="card-categoria">
+            <div class="informacoes-categoria">
+              <span class="cor-categoria cor-pessoal"></span>
+              <div>
+                <h3>Pessoal</h3>
+                <p>0 tarefas</p>
+              </div>
+            </div>
+
+            <div class="acoes-categoria">
+              <button
+                type="button"
+                class="botao-acao botao-editar"
+                aria-label="Editar categoria Pessoal"
+                title="Editar"
+              >
+                <span aria-hidden="true">✎</span>
+              </button>
+              <button
+                type="button"
+                class="botao-acao botao-excluir"
+                aria-label="Excluir categoria Pessoal"
+                title="Excluir"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="js/categorias.js"></script>
+  </body>
+</html>

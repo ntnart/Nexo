@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexo</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="nexo-icone.png" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/nexo-icone.png" />
+    <script type="module" src="js/configuracoes.js"></script>
+    <script type="module" src="js/main.js"></script>
   </head>
 
   <body>
     <aside>
       <h1>
-        <img src="nexo-icone.png" alt="" />
+        <img src="img/nexo-icone.png" alt="" />
         Nexo
       </h1>
 
       <nav>
         <ul>
-          <li><a href="#" class="ativo">Minhas tarefas</a></li>
-          <li><a href="#">Categorias</a></li>
+          <li>
+            <a href="index.html" class="ativo">Minhas tarefas</a>
+          </li>
+          <li>
+            <a href="categorias.html">Categorias</a>
+          </li>
+          <li>
+            <a href="configuracoes.html">Configurações</a>
+          </li>
         </ul>
       </nav>
     </aside>
@@ -37,13 +45,7 @@
             aria-label="Pesquisar tarefas"
           />
 
-          <nav class="filtros-categorias" id="botoes-filtros">
-            <button type="button" class="ativo">Todas</button>
-            <button type="button">Programação</button>
-            <button type="button">Trabalho</button>
-            <button type="button">Estudos</button>
-            <button type="button">Pessoal</button>
-          </nav>
+          <nav class="filtros-categorias" id="botoes-filtros"></nav>
         </div>
 
         <button type="button" id="abrir-formulario">+ Nova tarefa</button>
@@ -63,10 +65,6 @@
           <label for="categoria-tarefa">Categoria</label>
           <select id="categoria-tarefa">
             <option value="">Sem categoria</option>
-            <option value="Programação">Programação</option>
-            <option value="Trabalho">Trabalho</option>
-            <option value="Estudos">Estudos</option>
-            <option value="Pessoal">Pessoal</option>
           </select>
 
           <label for="prioridade-tarefa">Prioridade</label>
